@@ -1,0 +1,14 @@
+<% title = 'Issued Problems' %>
+
+<h1><%= title %></h1>
+<p>
+<ul>
+<% for(var i = 0; i < submits.length; i++) { %>
+  <li>
+    <%= submits[i].name %>
+    <%= submits[i].code %>
+    <%= submits[i].date %>
+<% } %>
+</ul>
+<a href='/problems/new'>create</a>
+</p>
